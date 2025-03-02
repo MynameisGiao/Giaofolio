@@ -5,6 +5,15 @@ const typed = new Typed('.typing', {
     backSpeed: 80,
     loop: true,
   });
+  document.querySelectorAll(".nav li a").forEach(link => {
+    link.addEventListener("click", function() {
+        // Xóa class "active" khỏi tất cả các mục
+        document.querySelectorAll(".nav li a").forEach(item => item.classList.remove("active"));
+
+        // Thêm class "active" cho mục được bấm
+        this.classList.add("active");
+    });
+});
 
   const portfolioData = {
     "sorrtnship": {
