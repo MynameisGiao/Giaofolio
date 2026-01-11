@@ -13,7 +13,8 @@ const typed = new Typed('.typing', {
         // Thêm class "active" cho mục được bấm
         this.classList.add("active");
     });
-});
+  });
+  
 
   const portfolioData = {
     "sorrtnship": {

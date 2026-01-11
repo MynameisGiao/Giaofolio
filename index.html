@@ -1,382 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Creative Game Developer</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giaofolio</title>
+    <!-- Favicon image -->
+    <link rel="icon" type="image/png" href="images/mascot.png" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <!-- Main -->
-    <div class="main-container">
-        <!-- aside -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>Rise</span>D</a>
-            </div>
+  <body>
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="logo">_dphuonggiao_</div>
 
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li>
-                    <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
-                </li>
-                <li>
-                    <a href="#about"><i class="fa fa-user"></i>About</a>
-                </li>
-                <li>
-                    <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
-                </li>
+        <!-- Desktop nav -->
+        <nav class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
+        <!-- Burger
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> -->
+      </div>
+
+      <!-- Mobile menu -->
+      <!-- <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" data-link>Home</a>
+        <a href="#about" data-link>About</a>
+        <a href="#projects" data-link>Projects</a>
+        <a href="#experience" data-link>Experience</a>
+        <a href="#contact" data-link>Contact</a>
+      </div> -->
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero scene hero-scene">
+      <div class="hero-container">
+        <div class="hero-left">
+          <h1><span class="gradient-text typing"></span><br /></h1>
+          <p class="subtitle">Playables • Games • Creative</p>
+          <p class="desc">
+            I design and build interactive game experiences, from playable ads
+            to full gameplay systems.
+          </p>
+
+          <div class="buttons">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="Resume.pdf" download>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img src="images/mascot.png" />
+        </div>
+      </div>
+    </section>
+
+    <div class="scene-divider"></div>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about scene about-scene">
+      <div class="about-container">
+        <div class="about-left">
+          <img src="images/mascot.png" class="about-mascot" />
+
+          <div class="about-card">
+            <h3>About Me</h3>
+            <p>
+              Gameplay-focused developer with experience building interactive
+              systems across both playable ads and mobile games. Strong
+              background in rapid prototyping, music & rhythm-based gameplay
+              mechanics, and collaborating closely with artists and designers to
+              deliver polished.
+            </p>
+            <p>
+              I have worked across creative production and product game
+              development, adapting quickly to different technical scopes,
+              constraints, and team workflows.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="skill-card">
+            <h4>🎨 Creative</h4>
+            <ul>
+              <li>Gameplay-driven creative concepts</li>
+              <li>Visual interaction & game feel tuning</li>
+              <li>Rapid iteration from prototype to polished gameplay</li>
+              <li>Close collaboration with artists & designers</li>
             </ul>
+          </div>
+          <div class="skill-card">
+            <h4>🎮 Game</h4>
+            <ul>
+              <li>Interactive gameplay system design</li>
+              <li>Music & rhythm-based mechanics (timing-driven logic)</li>
+              <li>Rapid prototyping under technical constraints</li>
+              <li>Gameplay adaptation across different game contexts</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>⚙️ Tech</h4>
+            <ul>
+              <li>Unity-based gameplay architecture</li>
+              <li>Reusable systems for rapid iteration</li>
+              <li>Custom tools to support gameplay production</li>
+              <li>Experience working within scalable production pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scene-divider"></div>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects scene project-scene">
+      <h2 class="section-title">Selected Work</h2>
+
+      <!-- PLAYABLE ADS -->
+      <div class="project-group">
+        <div class="group-header">
+          <h3>Playable Ads</h3>
+          <p class="group-desc">
+            Interactive playables focused on performance & engagement
+          </p>
         </div>
 
-        <!-- main-content -->
-        <div class="main-content">
+        <div class="project-grid grid-2">
+          <div class="project-card">
+            <div class="thumb">
+              <div class="thumb small">🚀</div>
+            </div>
+            <h4>Winning Playables</h4>
+            <p class="tag">Rhythm • Performance</p>
 
-            <!-- home -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">
-                                Hello, my name is <span class="name"> Phuong Giao</span>
-                            </h3>
-                            <h3 class="my-profession">
-                                I'm a <span class="typing"></span>
-                            </h3>
-                            <p>I'm a passionate game developer who enjoys creating fun and engaging gameplay
-                                experiences.
-                                I love bringing ideas to life and continuously learning new skills to improve my craft.
-                            </p>
-                            <p>I have always loved playing games, and while playing, I often came up with ideas for new
-                                features or improvements. I would imagine how the game could be even better with added
-                                mechanics or different gameplay elements.
+            <a
+              class="btn primary"
+              href="https://drive.google.com/drive/u/0/folders/1gK3RLKPsXCkEBiwuG9iQWKX2Rsl4DjUN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ View Playable
+            </a>
+          </div>
 
-                                When I started university, I was introduced to game programming. The more I learned
-                                about it, the more fascinated I became. That was when I decided to dive deeper into game
-                                development.
-                            </p>
-                            <p>
-                                One of the things I enjoy most is seeing my game slowly take shape—watching it grow from
-                                a simple demo into a fully developed project. Even more than that, I genuinely love
-                                coding.
-                                While some might find programming exhausting, for me, writing code for a game I’m
-                                passionate about is incredibly satisfying and relaxing.
-                            </p>
-                            <a href="#contact" class="btn hire-me">Contact Me</a>
-                        </div>
-
-                        <div class="home-img padd-15">
-                            <img src="./images/Ảnh CV.jpg" alt="my picture">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- about -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Duong Phuong Giao and <span>Game Developer</span></h3>
-                                    <p>I'm a passionate game developer who enjoys creating fun and engaging gameplay
-                                        experiences.
-                                        I love bringing ideas to life and continuously learning new skills to improve my
-                                        craft</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <h3 class="title-personal">Infomation</h3>
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p><strong>Full name:</strong> <span>Duong Phuong Giao</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>Birthday:</strong> <span>28 April 2004</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>Email:</strong>
-                                                <a href="mailto:2004phuonggiao@gmail.com">2004phuonggiao@gmail.com</a>
-                                            </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>Github:</strong>
-                                                <a href="https://github.com/MynameisGiao"
-                                                    target="_blank">MynameisGiao</a>
-                                            </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>Phone:</strong>
-                                                <a href="tel:+84869070465">0869070465</a>
-                                            </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>Location:</strong> <span>Nha Be, Ho Chi Minh City</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p><strong>University:</strong> <span>Ho Chi Minh City Open
-                                                    University</span></p>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="Resume.pdf" class="btn" download>Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Contact me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <h3 class="title-personal">Skills</h3>
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5><i class="fa-solid fa-gamepad"></i> Game Development</h5>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5><i class="fa-solid fa-code"></i> C#</h5>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5><i class="fa-brands fa-git-alt"></i> Git</h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa-solid fa-calendar-days"></i>
-                                                        August 2023 - February 2025
-                                                    </h3>
-                                                    <h4 class="timeline-title">Unity Training at Brayang Training</h4>
-                                                    <h5>Trainer: Nguyen Minh Cao Khoa</h5>
-                                                    <p class="timeline-text">
-                                                        Learned the complete process of developing a Unity 3D game from
-                                                        start to finish,
-                                                        including game programming, data storage, lightmapping
-                                                        techniques, game publishing, online multiplayer, ad integration,
-                                                        and in-app purchases.
-                                                    </p>
-                                                </div>
-
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa-solid fa-calendar-days"></i> 2022 - 2026
-                                                    </h3>
-                                                    <h4 class="timeline-title">Studying at Ho Chi Minh City Open
-                                                        University</h4>
-                                                    <h5>Major: Information Technology</h5>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa-solid fa-calendar-days"></i>
-                                                        May 2024 - January 2025
-                                                    </h3>
-                                                    <h4 class="timeline-title">Partner Developer at Mopa Games Studio
-                                                    </h4>
-                                                    <p class="timeline-text">
-                                                        Developer for Sort n Ship project, responsible for the full
-                                                        development cycle, including core gameplay mechanics,
-                                                        optimization, and implementation
-                                                    </p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- portfolio -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Projects</h2>
-                        </div>
-                    </div>
-                    <div class="row port-center">
-                        <div class="portfolio-item padd-15" data-key="sorrtnship">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="./images/sortnship/Icon_512x512.png" alt="sorrtnship">
-                                </div>
-                                <h3 class="project-title">Goods Match: Sort n Ship</h3>
-                                <span class="project-category">Company Project</span>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item padd-15" data-key="cd">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="./images/dropcard/cd-icon.jpg" alt="cd">
-                                </div>
-                                <h3 class="project-title">Citadel Defense - Drop Card</h3>
-                                <span class="project-category">Personal Project</span>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item padd-15" data-key="shooting">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="./images/shooting/fps-icon.jpg" alt="shooting">
-                                </div>
-                                <h3 class="project-title">Shooting Game - FPS Game</h3>
-                                <span class="project-category">Personal Project</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <!-- Popup -->
-                <div class="popup">
-                    <div class="popup-content">
-                        <span class="close-btn">&times;</span>
-                        <h2 class="popup-title"></h2>
-                        <div class="popup-image-zone">
-                            <img class="popup-icon">
-                            <div class="main-img-zone">
-                                <img class="img-feature">
-                                <div class="control-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
-                                <div class="control-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-                            </div>
-                        </div>
-                        <div class="popup-text-zone">
-
-                            <h3 class="popup-date"></h3>
-                            <p class="link-pro">Link Game: <a href="" target="_blank">Download</a></p>
-                            <p class="link-code">Source Code: <a href="" target="_blank">View Source Code</a></p>
-                            <p class="desc-pro">Description: <span></span></p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-            </section>
-
-            <!-- contact -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title">HAVE YOU ANY QUESTION?</h3>
-                    <!-- <h4 class="contact-sub-title">...</h4> -->
-                    <div class="row">
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <h4>Call Me:</h4>
-                            <p>
-                                <a href="tel:+84869070465" class="contact-link">0869070465</a>
-                            </p>
-                        </div>
-
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <h4>Email:</h4>
-                            <p>
-                                <a href="mailto:2004phuonggiao@gmail.com"
-                                    class="contact-link">2004phuonggiao@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <img src="images/logo-zalo.png" alt="Zalo" width="30" height="30">
-                            </div>
-                            <h4>Zalo:</h4>
-                            <p>
-                                <a href="https://zalo.me/0869070465" class="social-link" target="_blank">
-                                    Duong Phuong Giao
-                                </a>
-                        </div>
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-brands fa-skype"></i>
-                            </div>
-                            <h4>Skype:</h4>
-                            <p>
-                                <a href="https://join.skype.com/invite/xjJTxTNaccJ6" class="social-link"
-                                    target="_blank">
-                                    _dphuonggiao_
-                                </a>
-                        </div>
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-brands fa-facebook"></i>
-                            </div>
-                            <h4>Facebook:</h4>
-                            <p>
-                                <a href="https://www.facebook.com/GiaoAhh28/" class="social-link">Duong Phuong Giao</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div class="project-card">
+            <div class="thumb">
+              <div class="thumb small">🎮</div>
+            </div>
+            <h4>Showcase Playables</h4>
+            <p class="tag">Rhythm • Creative • Showcase</p>
+            <a
+              class="btn primary"
+              href="https://drive.google.com/drive/u/0/folders/1hn1GxrN0K5Qn2O9gCqSpQM07On-Swg3n"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ View Playable
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="project-group">
+        <div class="group-header">
+          <h3>Tools & Experiments</h3>
+          <p class="group-desc">
+            Internal tools built to support gameplay & creative workflows
+          </p>
+        </div>
+
+        <div class="project-grid grid-2">
+          <div class="project-card">
+            <div class="thumb small">🛠</div>
+            <h4>Unity MIDI Parser</h4>
+            <p class="tag">Internal Tool • Gameplay</p>
+            <a
+              class="btn primary"
+              href="https://drive.google.com/drive/u/0/folders/1rD18L5r8P9fW3DpSqw3NrimUrdQwqTDL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ View tool
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="thumb small">🤖</div>
+            <h4>Prompt Enhancer</h4>
+            <p class="tag">AI Tool • Creative Support</p>
+            <a
+              class="btn primary"
+              href="https://drive.google.com/drive/u/0/folders/1gy9z3_5Aa-b-dUWTmpPiaOaVJAA_BahY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ View tool
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME PROJECTS -->
+      <div class="project-group">
+        <div class="group-header">
+          <h3>Game Projects</h3>
+          <p class="group-desc">
+            Mobile games and personal gameplay prototypes
+          </p>
+        </div>
+
+        <div class="project-grid grid-3">
+          <div class="project-card">
+            <div class="thumb">
+              <img src="images/sortnship/Icon_512x512.png" alt="Goods Match" />
+            </div>
+            <h4>Goods Match: Sort n Ship</h4>
+            <p class="tag">Mobile Puzzle • Gameplay</p>
+            <a
+              class="btn primary"
+              href="https://play.google.com/store/apps/details?id=com.goods.sort.match3.puzzle&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ View Project
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="thumb">
+              <img src="images/dropcard/cd-icon.jpg" alt=" Citadel Defense" />
+            </div>
+            <h4>Citadel Defense</h4>
+            <p class="tag">Card Game • Gameplay</p>
+            <div class="card-actions">
+              <a
+                class="btn primary"
+                href="https://drive.google.com/drive/u/0/folders/1Ev704p-Rl7VgCu2hDqa6MMPBBz5cFjmh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ View Project
+              </a>
+
+              <a
+                class="btn secondary"
+                href="https://github.com/MynameisGiao/DropCardGame"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ View Source
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="thumb">
+              <img src="images/shooting/fps-icon.jpg" alt="Shoting Game" />
+            </div>
+            <h4>Shoting Game</h4>
+            <p class="tag">FPS • Gameplay</p>
+            <div class="card-actions">
+              <a
+                class="btn primary"
+                href="https://drive.google.com/drive/u/0/folders/1uc7WKzcxyxIKopBUe0Q2lSeoB2e5X2lJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ View Project
+              </a>
+
+              <a
+                class="btn secondary"
+                href="https://github.com/MynameisGiao/FPS_Game"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ View Source
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT MODAL ================= -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-overlay"></div>
+
+      <div class="modal-content">
+        <button class="modal-close">✕</button>
+
+        <!-- Header -->
+        <div class="modal-header">
+          <img class="modal-image" src="" alt="Project Image" />
+
+          <div class="modal-header-info">
+            <h3 class="modal-title"></h3>
+            <p class="modal-subtitle"></p>
+
+            <div class="modal-tags">
+              <span class="chip">Playable</span>
+              <span class="chip">Unity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Overview</h4>
+            <p class="modal-desc"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Features</h4>
+            <ul class="modal-list">
+              <li>Clear interaction & feedback loop</li>
+              <li>Optimized for performance & retention</li>
+              <li>Designed under playable ad constraints</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Tech Stack</h4>
+            <p class="modal-tech"></p>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button class="btn secondary modal-close-btn">Close</button>
+          <button class="btn primary">View Demo</button>
+        </div>
+      </div>
     </div>
 
+    <div class="scene-divider"></div>
 
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="experience scene experience-scene">
+      <h2 class="section-title">Experience & Tools</h2>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/script.js"></script>
+      <div class="experience-container">
+        <div class="experience-card">
+          <h3>Playable Developer — Uplive</h3>
+          <p class="sub">04/2025 – Present</p>
+          <ul>
+            <li>
+              Developed high-volume interactive playables using Unity and Luna
+              Playworks under tight production timelines
+            </li>
+            <li>
+              Designed and implemented gameplay systems with a focus on music-
+              and rhythm-based mechanics, including MIDI-driven timing logic
+            </li>
+            <li>
+              Collaborated closely with artists and creative teams to define
+              gameplay direction, visual interaction, and player feedback
+            </li>
+            <li>
+              Tuned gameplay flow, interaction clarity, and responsiveness
+              through rapid iteration cycles
+            </li>
+            <li>
+              Built internal tools to accelerate production, including a Unity
+              MIDI parser and AI-assisted prompt tooling
+            </li>
+          </ul>
+        </div>
+        <div class="experience-card">
+          <h3>Goods Match: Sort n Ship</h3>
+          <p class="sub">Partner Game Developer • Google Play</p>
+          <ul>
+            <li>
+              Contributed to interactive gameplay features and systems in a live
+              mobile puzzle game
+            </li>
+            <li>
+              Worked within live operations and publishing pipelines for a
+              shipped product
+            </li>
+            <li>
+              Improved gameplay feel, UX clarity, and player retention through
+              iterative development
+            </li>
+          </ul>
+        </div>
 
-</body>
+        <div class="tools-card">
+          <h3>Tools & Technologies</h3>
+          <div class="tool-grid">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Gameplay Systems</span>
+            <span>Git</span>
+            <span>Custom Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="scene-divider"></div>
 
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact scene contact-scene">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container-wrapper">
+        <div class="contact-container">
+          <div class="contact-left">
+            <img src="images/mascot.png" class="contact-mascot" />
+            <p>📧 2004phuonggiao@gmail.com</p>
+          </div>
+
+          <!-- RIGHT: CONTACT BOXES -->
+          <div class="contact-boxes">
+            <div class="contact-item">
+              <div class="icon">📞</div>
+              <h4>Call Me:</h4>
+              <p>
+                <a href="tel:0869070465">0869 070 465</a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">✉️</div>
+              <h4>Email:</h4>
+              <p>
+                <a href="mailto:2004phuonggiao@gmail.com">
+                  2004phuonggiao@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">💬</div>
+              <h4>Zalo:</h4>
+              <p>
+                <a
+                  href="https://zalo.me/0869070465"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Duong Phuong Giao
+                </a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">💼</div>
+              <h4>LinkedIn:</h4>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/duong-phuong-giao-077225253/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  _dphuonggiao_
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <p>© 2026 Creative Game Developer</p>
+      <p>Made with ❤️</p>
+    </footer>
+
+    <button class="scroll-top">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
